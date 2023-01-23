@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <section class="contenedor-logo-buscador-frase">
+            <div class="logo">
+                <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo"></a>
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar productos, marcas ...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="frase">
+                <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        <nav>
+            <ul class="lista-superior">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="lista-inferior">
+                <li><a href="register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="login">Ingresá<i class="fas fa-sign-in-alt "></i></a></li>
+                <li><a href="">Mis Compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+    <div class="form-container">
+        <form action="/crear-producto" method="">
+            <div class="divs-contenedores">
+                <label></label>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            </div>
+            <div class="divs-contenedores">
+                <label></label>
+                <input type="text" name="precio" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="divs-contenedores">
+                <label></label>
+                <input type="text" name="oferta" placeholder="E-mail" required>
+            </div>
+            <div class="divs-contenedores">
+                <label>Fecha de nacimiento</label>
+                <input type="date" required>
+            </div>
+            <div class="divs-contenedores">
+                <label></label>
+                <input type="text" placeholder="Domicilio" required>
+            </div>
+            <div class="divs-contenedores-perfil">
+                <p class="titulo">Perfil de usuario</p>
+                <input type="radio" required name="usuario" id="r1" value="yes"><label for="r1">Comprador</label>
+                <input type="radio" required name="usuario" id="r2" value="no"><label for="r2">Vendedor</label>
+            </div>
+            <div class="divs-contenedores-intereses">
+                <div class="titulo-interes"><label>Interes</label></div>
+                <input type="checkbox"><label>Electro</label>
+                <input type="checkbox"> <label>Moda</label>
+                <input type="checkbox"> <label>Hogar</label>
+                <input type="checkbox"><label>Juguetería</label>
+                <input type="checkbox"><label>Vida Sana</label>
+            </div>
+            <div class="divs-contenedores">
+                <span class="error-message">Credenciales inválidas</span>
+                <button type="submit" class="btn">Registrarme</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

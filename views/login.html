@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <section class="contenedor-logo-buscador-frase">
+            <div class="logo">
+                <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo"></a>
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar productos, marcas ...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="frase">
+                <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        <nav>
+            <ul class="lista-superior">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="lista-inferior">
+                <li><a href="register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="login">Ingresá<i class="fas fa-sign-in-alt "></i></a></li>
+                <li><a href="">Mis Compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+    <div class="form-container">
+        <h2>LOGIN</h2>
+        <hr>
+        <form action="" method="">
+            <div class="form">
+                <div class="input-container">
+                    <input class="input-style" type="text" name="nombreUsuario" placeholder="Nombre de usuario" required>
+                    <!-- <span class="error-message">Debe ingresar su email</span> -->
+                </div>
+                <div class="input-container">
+                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div class="button-container">
+                    <!-- <span class="error-message">Credenciales inválidas</span> -->
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

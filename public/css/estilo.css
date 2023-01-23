@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/*VARIABLES*/
+:root {
+
+    /*Variables de colores*/
+    
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+
+    /*Fuentes*/
+
+    --fuente: 'Roboto', sans-serif;
+
+    /*Tamaños tipograficos*/
+
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precios: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+}
+
+/*GENERALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    box-sizing: border-box;
+}
+h4 {
+    width: 100%;
+    padding: 20px;
+}
+
+p {
+    font-size: var(--parrafos);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--gris-claro);
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+    position: relative;
+}
+
+header div.logo {
+    max-width: 130px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+header div.busqueda {
+    margin-left: 15px;
+    width: 50%;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+header div.busqueda input {
+    width: 130px;
+    height: 30px;
+    border-radius: 0.2rem;
+    border: none;
+    margin-right: -22px;
+    
+}
+
+
+
+header p {
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+header nav ul.lista-superior{
+    margin-bottom: 15px;
+}
+
+header nav ul li a {
+    font-size: var(--parrafos);
+}
+
+header div.burger-menu{
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    padding: 7px;
+    margin: 25px auto 0 ;
+}
+
+/* PRODUCTOS */
+
+/* FOOTER */
+
+footer {
+    padding: 50px 10px 10px ;
+    background-color: white;
+}
+
+footer article{ 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+
+footer span {
+    font-size: var(--parrafos);
+}
+
+/* MAIN */
+
+main.home__productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+ .seccion__productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+main section.seccion__productos article {
+    padding: 2px;
+    margin: 2px;
+}
+
+main section article.seccion__productos--titulo--tarjeta section.prueba  {
+    padding: 15px 15px 15px 15px;
+    background-color: white;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+main div.carrito {
+    position: relative;
+}
+main div.carrito i {
+    border-radius: 50%;
+    border: 1px solid var(--verde);
+    color: var(--verde); 
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    position: absolute;
+    top: -30px;
+    left: 225px;
+}
+
+main p.descuento {
+    color: var(--verde);
+    width: 70%;
+}
+main p.precio {
+    width: 30%;
+}
+
+main section article.seccion__productos--titulo--tarjeta section.prueba h5 {
+    margin: 15px 0px 0px;
+    color: var(--gris-oscuro);
+}
+
+
+main section.seccion__productos article.seccion__productos--titulo--tarjeta img {
+    max-width: 280px;
+}
+
+
+/* Media queries */
+@media (max-width: 360px){
+    header nav {
+        display: none;
+    }
+
+    main section article section.prueba h5 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 361px){
+    
+    header div.burger-menu{
+        display: none;
+    }
+
+    main section article.seccion__productos--titulo--tarjeta {
+        border: 15px solid var(--gris-claro) ;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+   
+}
+
+@media (min-width: 768px){
+    header div.busqueda{
+        right: 100px;
+    }
+
+    header div.frase p {
+        margin-right: 15px;
+    }
+
+    header div.busqueda input{
+        width: 200px;
+       
+    }
+    header section.contenedor-logo-buscador-frase {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul.lista-superior, ul.lista-inferior, nav{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 10px -10px 10px;
+    }
+    
+    header nav ul li a {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    header div.logo {
+        max-width: 200px;
+    }
+    
+    
+    .seccion__productos {
+        justify-content: space-between;
+    }
+    
+
+}
+
+@media (min-width: 1024px) {
+    header section.contenedor-logo-buscador-frase div.logo img {
+        width: 350px;
+    }
+}
